@@ -1,6 +1,7 @@
 package com.mentoringprogram.module3.cache;
 
 public interface Cache<T> {
-  T put(T t);
-  T get();
+  void put(T cacheObject);
+  T get(T cacheObject);
+  String getStatistic();
 }

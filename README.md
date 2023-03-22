@@ -28,19 +28,19 @@ Implement cache service. Cache entries (objects) – simple custom class with on
 
 Your cache service should fit next requirements:
 
-- Max Size = 100 000;
-- Eviction policy;
-- Time-based on last access (5 seconds);
-- Removal listener;
-- Just add to log of removed entry;
-- Give statistic to user;
-- Average time spent for putting new values into the cache;
-- Number of cache evictions;
+- <b>+++</b> Max Size = 100 000;
+- <b>+++</b> Eviction policy;
+- <b>+++</b> Time-based on last access (5 seconds);
+- <b>+++</b> Removal listener;
+- <b>+++</b> Just add to log of removed entry;
+- <b>+++</b> Give statistic to user;
+- <b>+++</b> Average time spent for putting new values into the cache;
+- <b>+++</b> Number of cache evictions;
 - Support concurrency.
 
 This task should be implemented in two ways:
 
-1. Simple Java (2 points) (Strategy: LFU);
+1. <b>+++</b> Simple Java (2 points) (Strategy: LFU);
 2. Guava (1 point) (Strategy: LRU).
 
 Don't forget about good tests, checkstyle and other staff that already included into your build phase.
