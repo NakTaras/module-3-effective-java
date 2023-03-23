@@ -51,8 +51,8 @@ Extra-mile:
 
 Implement binary search algorithm:
 
-- recursively (0.25 points)
-- iteratively (0.25 points)
+- <b>+++</b> recursively (0.25 points)
+- <b>+++</b> iteratively (0.25 points)
 - discover implementation effectiveness (using unit tests and benchmarks) and provide description of results in readme.md (discover complexity, provide time comparison, and explore which approach is more suitable in different situations).
 
 1. Implement merge-sort algorithm with desired complexity of O(N log(N)). Provide unit and benchmark tests. (0.5 point)
