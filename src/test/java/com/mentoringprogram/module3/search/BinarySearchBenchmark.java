@@ -1,39 +1,40 @@
 package com.mentoringprogram.module3.search;
 
 import org.openjdk.jmh.annotations.*;
-import org.openjdk.jmh.infra.Blackhole;
 import org.openjdk.jmh.runner.RunnerException;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+
+@BenchmarkMode({Mode.Throughput, Mode.AverageTime})
+@OutputTimeUnit(TimeUnit.MILLISECONDS)
+@State(Scope.Benchmark)
+@Fork(value = 2)
 public class BinarySearchBenchmark {
 
-  @State(Scope.Thread)
-  public static class MyState {
+  @Param({"10", "100", "1000", "10000", "100000"})
+  int size;
+  Integer numberToFind;
+  Integer[] arr;
 
-    @Setup(Level.Trial)
-    public void doSetup() {
-      sum = 0;
-      System.out.println("Do Setup");
+  @Setup
+  public void setup() {
+    arr = new Integer[size];
+    for (int i = 0; i < size; i++) {
+      arr[i] = i;
     }
-
-    @TearDown(Level.Trial)
-    public void doTearDown() {
-      System.out.println("Do TearDown");
-    }
-
-    public int a = 1;
-    public int b = 2;
-    public int sum ;
+    numberToFind = ((int) (Math.random() * size));
   }
 
   @Benchmark
-  @BenchmarkMode(Mode.All)
-  @OutputTimeUnit(TimeUnit.MILLISECONDS)
-  public void testMethod(MyState state, Blackhole blackhole) {
-    state.sum = state.a + state.b;
-    blackhole.consume(state.sum);
+  public int testRecursiveSearch() {
+    return BinarySearch.recursiveSearch(arr, numberToFind, 0, arr.length - 1);
+  }
+
+  @Benchmark
+  public void testIterativeSearch() {
+    BinarySearch.iterativeSearch(arr, numberToFind);
   }
 
   public static void main(String[] args) throws IOException, RunnerException {

@@ -1,0 +1,938 @@
+C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Taras\IdeaProjects\Mentoring\module-3-effective-java\target\test-classes;C:\Users\Taras\IdeaProjects\Mentoring\module-3-effective-java\target\classes;C:\Users\Taras\.m2\repository\org\openjdk\jmh\jmh-core\1.35\jmh-core-1.35.jar;C:\Users\Taras\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Taras\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\Taras\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\Taras\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Taras\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar com.mentoringprogram.module3.search.BinarySearchBenchmark
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch
+# Parameters: (size = 10)
+
+# Run progress: 0,00% complete, ETA 01:06:40
+# Fork: 1 of 2
+# Warmup Iteration   1: 207577,883 ops/ms
+# Warmup Iteration   2: 209996,697 ops/ms
+# Warmup Iteration   3: 197569,202 ops/ms
+# Warmup Iteration   4: 196476,047 ops/ms
+# Warmup Iteration   5: 197729,918 ops/ms
+Iteration   1: 198435,509 ops/ms
+Iteration   2: 197441,979 ops/ms
+Iteration   3: 198958,328 ops/ms
+Iteration   4: 196302,261 ops/ms
+Iteration   5: 197482,354 ops/ms
+
+# Run progress: 2,50% complete, ETA 01:05:26
+# Fork: 2 of 2
+# Warmup Iteration   1: 276540,441 ops/ms
+# Warmup Iteration   2: 278656,816 ops/ms
+# Warmup Iteration   3: 264458,435 ops/ms
+# Warmup Iteration   4: 264592,848 ops/ms
+# Warmup Iteration   5: 263477,487 ops/ms
+Iteration   1: 263988,228 ops/ms
+Iteration   2: 264765,021 ops/ms
+Iteration   3: 264341,263 ops/ms
+Iteration   4: 264711,455 ops/ms
+Iteration   5: 264016,381 ops/ms
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch":
+  231044,278 ±(99.9%) 53111,626 ops/ms [Average]
+  (min, avg, max) = (196302,261, 231044,278, 264765,021), stdev = 35130,052
+  CI (99.9%): [177932,652, 284155,904] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch
+# Parameters: (size = 100)
+
+# Run progress: 5,00% complete, ETA 01:03:44
+# Fork: 1 of 2
+# Warmup Iteration   1: 118720,335 ops/ms
+# Warmup Iteration   2: 116137,146 ops/ms
+# Warmup Iteration   3: 116752,886 ops/ms
+# Warmup Iteration   4: 117155,416 ops/ms
+# Warmup Iteration   5: 116686,769 ops/ms
+Iteration   1: 115697,528 ops/ms
+Iteration   2: 115858,858 ops/ms
+Iteration   3: 116960,127 ops/ms
+Iteration   4: 116184,824 ops/ms
+Iteration   5: 114346,856 ops/ms
+
+# Run progress: 7,50% complete, ETA 01:02:03
+# Fork: 2 of 2
+# Warmup Iteration   1: 120695,554 ops/ms
+# Warmup Iteration   2: 119922,194 ops/ms
+# Warmup Iteration   3: 106094,442 ops/ms
+# Warmup Iteration   4: 106031,585 ops/ms
+# Warmup Iteration   5: 105949,788 ops/ms
+Iteration   1: 106017,662 ops/ms
+Iteration   2: 106113,069 ops/ms
+Iteration   3: 105676,020 ops/ms
+Iteration   4: 105153,584 ops/ms
+Iteration   5: 105774,222 ops/ms
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch":
+  110778,275 ±(99.9%) 8084,165 ops/ms [Average]
+  (min, avg, max) = (105153,584, 110778,275, 116960,127), stdev = 5347,175
+  CI (99.9%): [102694,110, 118862,440] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch
+# Parameters: (size = 1000)
+
+# Run progress: 10,00% complete, ETA 01:00:22
+# Fork: 1 of 2
+# Warmup Iteration   1: 83986,615 ops/ms
+# Warmup Iteration   2: 87439,169 ops/ms
+# Warmup Iteration   3: 85967,543 ops/ms
+# Warmup Iteration   4: 85681,748 ops/ms
+# Warmup Iteration   5: 85630,670 ops/ms
+Iteration   1: 85483,437 ops/ms
+Iteration   2: 85833,137 ops/ms
+Iteration   3: 85876,445 ops/ms
+Iteration   4: 85633,515 ops/ms
+Iteration   5: 85292,738 ops/ms
+
+# Run progress: 12,50% complete, ETA 00:58:42
+# Fork: 2 of 2
+# Warmup Iteration   1: 80717,678 ops/ms
+# Warmup Iteration   2: 76077,543 ops/ms
+# Warmup Iteration   3: 77467,771 ops/ms
+# Warmup Iteration   4: 79013,968 ops/ms
+# Warmup Iteration   5: 78468,674 ops/ms
+Iteration   1: 79208,564 ops/ms
+Iteration   2: 79557,263 ops/ms
+Iteration   3: 79368,058 ops/ms
+Iteration   4: 78961,551 ops/ms
+Iteration   5: 79318,507 ops/ms
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch":
+  82453,322 ±(99.9%) 5063,466 ops/ms [Average]
+  (min, avg, max) = (78961,551, 82453,322, 85876,445), stdev = 3349,170
+  CI (99.9%): [77389,855, 87516,788] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch
+# Parameters: (size = 10000)
+
+# Run progress: 15,00% complete, ETA 00:57:01
+# Fork: 1 of 2
+# Warmup Iteration   1: 58331,993 ops/ms
+# Warmup Iteration   2: 58978,461 ops/ms
+# Warmup Iteration   3: 59278,919 ops/ms
+# Warmup Iteration   4: 59228,468 ops/ms
+# Warmup Iteration   5: 59373,767 ops/ms
+Iteration   1: 59433,232 ops/ms
+Iteration   2: 59160,006 ops/ms
+Iteration   3: 59575,868 ops/ms
+Iteration   4: 59375,321 ops/ms
+Iteration   5: 59478,194 ops/ms
+
+# Run progress: 17,50% complete, ETA 00:55:20
+# Fork: 2 of 2
+# Warmup Iteration   1: 62000,564 ops/ms
+# Warmup Iteration   2: 61590,817 ops/ms
+# Warmup Iteration   3: 60402,364 ops/ms
+# Warmup Iteration   4: 59346,593 ops/ms
+# Warmup Iteration   5: 60555,017 ops/ms
+Iteration   1: 60388,499 ops/ms
+Iteration   2: 60244,387 ops/ms
+Iteration   3: 60407,855 ops/ms
+Iteration   4: 60477,502 ops/ms
+Iteration   5: 60502,566 ops/ms
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch":
+  59904,343 ±(99.9%) 818,095 ops/ms [Average]
+  (min, avg, max) = (59160,006, 59904,343, 60502,566), stdev = 541,119
+  CI (99.9%): [59086,248, 60722,438] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch
+# Parameters: (size = 100000)
+
+# Run progress: 20,00% complete, ETA 00:53:40
+# Fork: 1 of 2
+# Warmup Iteration   1: 44668,576 ops/ms
+# Warmup Iteration   2: 45462,292 ops/ms
+# Warmup Iteration   3: 46003,545 ops/ms
+# Warmup Iteration   4: 46151,265 ops/ms
+# Warmup Iteration   5: 46073,750 ops/ms
+Iteration   1: 46151,461 ops/ms
+Iteration   2: 46165,654 ops/ms
+Iteration   3: 45980,125 ops/ms
+Iteration   4: 46018,964 ops/ms
+Iteration   5: 46122,543 ops/ms
+
+# Run progress: 22,50% complete, ETA 00:51:59
+# Fork: 2 of 2
+# Warmup Iteration   1: 45710,964 ops/ms
+# Warmup Iteration   2: 46151,294 ops/ms
+# Warmup Iteration   3: 46249,855 ops/ms
+# Warmup Iteration   4: 46294,410 ops/ms
+# Warmup Iteration   5: 46241,353 ops/ms
+Iteration   1: 46267,694 ops/ms
+Iteration   2: 46190,268 ops/ms
+Iteration   3: 46197,709 ops/ms
+Iteration   4: 46319,387 ops/ms
+Iteration   5: 46241,710 ops/ms
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch":
+  46165,551 ±(99.9%) 158,935 ops/ms [Average]
+  (min, avg, max) = (45980,125, 46165,551, 46319,387), stdev = 105,126
+  CI (99.9%): [46006,617, 46324,486] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch
+# Parameters: (size = 10)
+
+# Run progress: 25,00% complete, ETA 00:50:18
+# Fork: 1 of 2
+# Warmup Iteration   1: 176844,674 ops/ms
+# Warmup Iteration   2: 178507,595 ops/ms
+# Warmup Iteration   3: 171367,057 ops/ms
+# Warmup Iteration   4: 170944,052 ops/ms
+# Warmup Iteration   5: 171018,646 ops/ms
+Iteration   1: 171677,473 ops/ms
+Iteration   2: 169442,252 ops/ms
+Iteration   3: 168134,571 ops/ms
+Iteration   4: 166319,950 ops/ms
+Iteration   5: 171189,163 ops/ms
+
+# Run progress: 27,50% complete, ETA 00:48:38
+# Fork: 2 of 2
+# Warmup Iteration   1: 182485,104 ops/ms
+# Warmup Iteration   2: 179822,581 ops/ms
+# Warmup Iteration   3: 176436,203 ops/ms
+# Warmup Iteration   4: 176932,949 ops/ms
+# Warmup Iteration   5: 176193,425 ops/ms
+Iteration   1: 175600,828 ops/ms
+Iteration   2: 176090,301 ops/ms
+Iteration   3: 176373,639 ops/ms
+Iteration   4: 176567,218 ops/ms
+Iteration   5: 177135,963 ops/ms
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch":
+  172853,136 ±(99.9%) 6032,555 ops/ms [Average]
+  (min, avg, max) = (166319,950, 172853,136, 177135,963), stdev = 3990,161
+  CI (99.9%): [166820,581, 178885,691] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch
+# Parameters: (size = 100)
+
+# Run progress: 30,00% complete, ETA 00:46:57
+# Fork: 1 of 2
+# Warmup Iteration   1: 90970,679 ops/ms
+# Warmup Iteration   2: 89549,359 ops/ms
+# Warmup Iteration   3: 89199,726 ops/ms
+# Warmup Iteration   4: 89141,507 ops/ms
+# Warmup Iteration   5: 89286,842 ops/ms
+Iteration   1: 89151,933 ops/ms
+Iteration   2: 89259,867 ops/ms
+Iteration   3: 88627,399 ops/ms
+Iteration   4: 89784,429 ops/ms
+Iteration   5: 88833,172 ops/ms
+
+# Run progress: 32,50% complete, ETA 00:45:16
+# Fork: 2 of 2
+# Warmup Iteration   1: 84446,345 ops/ms
+# Warmup Iteration   2: 85464,764 ops/ms
+# Warmup Iteration   3: 83733,410 ops/ms
+# Warmup Iteration   4: 83685,686 ops/ms
+# Warmup Iteration   5: 83763,602 ops/ms
+Iteration   1: 83812,316 ops/ms
+Iteration   2: 83107,462 ops/ms
+Iteration   3: 83392,999 ops/ms
+Iteration   4: 83588,013 ops/ms
+Iteration   5: 83612,196 ops/ms
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch":
+  86316,979 ±(99.9%) 4515,288 ops/ms [Average]
+  (min, avg, max) = (83107,462, 86316,979, 89784,429), stdev = 2986,584
+  CI (99.9%): [81801,690, 90832,267] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch
+# Parameters: (size = 1000)
+
+# Run progress: 35,00% complete, ETA 00:43:36
+# Fork: 1 of 2
+# Warmup Iteration   1: 103194,988 ops/ms
+# Warmup Iteration   2: 103465,820 ops/ms
+# Warmup Iteration   3: 103312,240 ops/ms
+# Warmup Iteration   4: 103813,322 ops/ms
+# Warmup Iteration   5: 103690,117 ops/ms
+Iteration   1: 103462,455 ops/ms
+Iteration   2: 103792,314 ops/ms
+Iteration   3: 103920,094 ops/ms
+Iteration   4: 103612,412 ops/ms
+Iteration   5: 103500,484 ops/ms
+
+# Run progress: 37,50% complete, ETA 00:41:55
+# Fork: 2 of 2
+# Warmup Iteration   1: 68877,354 ops/ms
+# Warmup Iteration   2: 69355,569 ops/ms
+# Warmup Iteration   3: 70287,201 ops/ms
+# Warmup Iteration   4: 70471,243 ops/ms
+# Warmup Iteration   5: 70612,376 ops/ms
+Iteration   1: 70645,544 ops/ms
+Iteration   2: 69791,993 ops/ms
+Iteration   3: 69768,453 ops/ms
+Iteration   4: 68417,731 ops/ms
+Iteration   5: 70400,173 ops/ms
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch":
+  86731,165 ±(99.9%) 26989,296 ops/ms [Average]
+  (min, avg, max) = (68417,731, 86731,165, 103920,094), stdev = 17851,748
+  CI (99.9%): [59741,869, 113720,461] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch
+# Parameters: (size = 10000)
+
+# Run progress: 40,00% complete, ETA 00:40:14
+# Fork: 1 of 2
+# Warmup Iteration   1: 36475,982 ops/ms
+# Warmup Iteration   2: 36339,242 ops/ms
+# Warmup Iteration   3: 35981,957 ops/ms
+# Warmup Iteration   4: 36049,530 ops/ms
+# Warmup Iteration   5: 36054,902 ops/ms
+Iteration   1: 36122,194 ops/ms
+Iteration   2: 35811,928 ops/ms
+Iteration   3: 35922,948 ops/ms
+Iteration   4: 35931,392 ops/ms
+Iteration   5: 36052,002 ops/ms
+
+# Run progress: 42,50% complete, ETA 00:38:34
+# Fork: 2 of 2
+# Warmup Iteration   1: 42674,111 ops/ms
+# Warmup Iteration   2: 42798,591 ops/ms
+# Warmup Iteration   3: 41964,678 ops/ms
+# Warmup Iteration   4: 41867,357 ops/ms
+# Warmup Iteration   5: 42028,853 ops/ms
+Iteration   1: 41952,809 ops/ms
+Iteration   2: 41825,909 ops/ms
+Iteration   3: 41954,723 ops/ms
+Iteration   4: 41862,304 ops/ms
+Iteration   5: 42011,657 ops/ms
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch":
+  38944,787 ±(99.9%) 4745,950 ops/ms [Average]
+  (min, avg, max) = (35811,928, 38944,787, 42011,657), stdev = 3139,152
+  CI (99.9%): [34198,837, 43690,736] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch
+# Parameters: (size = 100000)
+
+# Run progress: 45,00% complete, ETA 00:36:53
+# Fork: 1 of 2
+# Warmup Iteration   1: 27812,659 ops/ms
+# Warmup Iteration   2: 27634,797 ops/ms
+# Warmup Iteration   3: 27526,650 ops/ms
+# Warmup Iteration   4: 27594,739 ops/ms
+# Warmup Iteration   5: 27517,722 ops/ms
+Iteration   1: 27334,970 ops/ms
+Iteration   2: 27533,951 ops/ms
+Iteration   3: 27114,338 ops/ms
+Iteration   4: 27314,516 ops/ms
+Iteration   5: 27740,190 ops/ms
+
+# Run progress: 47,50% complete, ETA 00:35:13
+# Fork: 2 of 2
+# Warmup Iteration   1: 29950,123 ops/ms
+# Warmup Iteration   2: 29968,335 ops/ms
+# Warmup Iteration   3: 29943,191 ops/ms
+# Warmup Iteration   4: 29915,507 ops/ms
+# Warmup Iteration   5: 29892,726 ops/ms
+Iteration   1: 29784,963 ops/ms
+Iteration   2: 29822,783 ops/ms
+Iteration   3: 29900,576 ops/ms
+Iteration   4: 30006,602 ops/ms
+Iteration   5: 29899,439 ops/ms
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch":
+  28645,233 ±(99.9%) 1988,738 ops/ms [Average]
+  (min, avg, max) = (27114,338, 28645,233, 30006,602), stdev = 1315,427
+  CI (99.9%): [26656,495, 30633,971] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch
+# Parameters: (size = 10)
+
+# Run progress: 50,00% complete, ETA 00:33:32
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+# Run progress: 52,50% complete, ETA 00:31:51
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch":
+  ≈ 10⁻⁵ ms/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch
+# Parameters: (size = 100)
+
+# Run progress: 55,00% complete, ETA 00:30:11
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+# Run progress: 57,50% complete, ETA 00:28:30
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch":
+  ≈ 10⁻⁵ ms/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch
+# Parameters: (size = 1000)
+
+# Run progress: 60,00% complete, ETA 00:26:49
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+# Run progress: 62,50% complete, ETA 00:25:09
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch":
+  ≈ 10⁻⁵ ms/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch
+# Parameters: (size = 10000)
+
+# Run progress: 65,00% complete, ETA 00:23:28
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+# Run progress: 67,50% complete, ETA 00:21:48
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch":
+  ≈ 10⁻⁵ ms/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch
+# Parameters: (size = 100000)
+
+# Run progress: 70,00% complete, ETA 00:20:07
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+# Run progress: 72,50% complete, ETA 00:18:26
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testIterativeSearch":
+  ≈ 10⁻⁵ ms/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch
+# Parameters: (size = 10)
+
+# Run progress: 75,00% complete, ETA 00:16:46
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+# Run progress: 77,50% complete, ETA 00:15:05
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch":
+  ≈ 10⁻⁵ ms/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch
+# Parameters: (size = 100)
+
+# Run progress: 80,00% complete, ETA 00:13:24
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+# Run progress: 82,50% complete, ETA 00:11:44
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch":
+  ≈ 10⁻⁵ ms/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch
+# Parameters: (size = 1000)
+
+# Run progress: 85,00% complete, ETA 00:10:03
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+# Run progress: 87,50% complete, ETA 00:08:23
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch":
+  ≈ 10⁻⁵ ms/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch
+# Parameters: (size = 10000)
+
+# Run progress: 90,00% complete, ETA 00:06:42
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+# Run progress: 92,50% complete, ETA 00:05:01
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁵ ms/op
+Iteration   1: ≈ 10⁻⁵ ms/op
+Iteration   2: ≈ 10⁻⁵ ms/op
+Iteration   3: ≈ 10⁻⁵ ms/op
+Iteration   4: ≈ 10⁻⁵ ms/op
+Iteration   5: ≈ 10⁻⁵ ms/op
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch":
+  ≈ 10⁻⁵ ms/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\Taras\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\lib\idea_rt.jar=52037:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch
+# Parameters: (size = 100000)
+
+# Run progress: 95,00% complete, ETA 00:03:21
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁴ ms/op
+Iteration   1: ≈ 10⁻⁴ ms/op
+Iteration   2: ≈ 10⁻⁴ ms/op
+Iteration   3: ≈ 10⁻⁴ ms/op
+Iteration   4: ≈ 10⁻⁴ ms/op
+Iteration   5: ≈ 10⁻⁴ ms/op
+
+# Run progress: 97,50% complete, ETA 00:01:40
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁴ ms/op
+Iteration   1: ≈ 10⁻⁴ ms/op
+Iteration   2: ≈ 10⁻⁴ ms/op
+Iteration   3: ≈ 10⁻⁴ ms/op
+Iteration   4: ≈ 10⁻⁴ ms/op
+Iteration   5: ≈ 10⁻⁴ ms/op
+
+
+Result "com.mentoringprogram.module3.search.BinarySearchBenchmark.testRecursiveSearch":
+  ≈ 10⁻⁴ ms/op
+
+
+# Run complete. Total time: 01:07:04
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                  (size)   Mode  Cnt       Score       Error   Units
+BinarySearchBenchmark.testIterativeSearch      10  thrpt   10  231044,278 ± 53111,626  ops/ms
+BinarySearchBenchmark.testIterativeSearch     100  thrpt   10  110778,275 ±  8084,165  ops/ms
+BinarySearchBenchmark.testIterativeSearch    1000  thrpt   10   82453,322 ±  5063,466  ops/ms
+BinarySearchBenchmark.testIterativeSearch   10000  thrpt   10   59904,343 ±   818,095  ops/ms
+BinarySearchBenchmark.testIterativeSearch  100000  thrpt   10   46165,551 ±   158,935  ops/ms
+BinarySearchBenchmark.testRecursiveSearch      10  thrpt   10  172853,136 ±  6032,555  ops/ms
+BinarySearchBenchmark.testRecursiveSearch     100  thrpt   10   86316,979 ±  4515,288  ops/ms
+BinarySearchBenchmark.testRecursiveSearch    1000  thrpt   10   86731,165 ± 26989,296  ops/ms
+BinarySearchBenchmark.testRecursiveSearch   10000  thrpt   10   38944,787 ±  4745,950  ops/ms
+BinarySearchBenchmark.testRecursiveSearch  100000  thrpt   10   28645,233 ±  1988,738  ops/ms
+BinarySearchBenchmark.testIterativeSearch      10   avgt   10      ≈ 10⁻⁵               ms/op
+BinarySearchBenchmark.testIterativeSearch     100   avgt   10      ≈ 10⁻⁵               ms/op
+BinarySearchBenchmark.testIterativeSearch    1000   avgt   10      ≈ 10⁻⁵               ms/op
+BinarySearchBenchmark.testIterativeSearch   10000   avgt   10      ≈ 10⁻⁵               ms/op
+BinarySearchBenchmark.testIterativeSearch  100000   avgt   10      ≈ 10⁻⁵               ms/op
+BinarySearchBenchmark.testRecursiveSearch      10   avgt   10      ≈ 10⁻⁵               ms/op
+BinarySearchBenchmark.testRecursiveSearch     100   avgt   10      ≈ 10⁻⁵               ms/op
+BinarySearchBenchmark.testRecursiveSearch    1000   avgt   10      ≈ 10⁻⁵               ms/op
+BinarySearchBenchmark.testRecursiveSearch   10000   avgt   10      ≈ 10⁻⁵               ms/op
+BinarySearchBenchmark.testRecursiveSearch  100000   avgt   10      ≈ 10⁻⁴               ms/op
+
+Process finished with exit code 0

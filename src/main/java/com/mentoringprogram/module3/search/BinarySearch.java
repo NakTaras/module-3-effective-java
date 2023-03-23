@@ -1,8 +1,8 @@
 package com.mentoringprogram.module3.search;
 
-import java.util.Comparator;
-
 public class BinarySearch {
+  private BinarySearch() {}
+
   public static <T extends Comparable<T>> int recursiveSearch(T[] array, T value, int lowIndex, int highIndex) {
     if (highIndex >= lowIndex) {
       int midIndex = (highIndex + lowIndex) / 2;
