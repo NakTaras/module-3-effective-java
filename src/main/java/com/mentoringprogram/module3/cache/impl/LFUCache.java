@@ -1,7 +1,7 @@
 package com.mentoringprogram.module3.cache.impl;
 
 import com.mentoringprogram.module3.cache.Cache;
-import com.mentoringprogram.module3.cache.Pair;
+import com.mentoringprogram.module3.cache.ValueWrapper;
 
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
@@ -11,11 +11,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class LFUCache<T> implements Cache<T> {
+public class LFUCache<K, V> implements Cache<K, V> {
 
   private final int cacheSize;
   private final int timeToLive;
-  private final Map<T, Pair> cache = new HashMap<>();
+  private final Map<K, ValueWrapper<V>> cache = new HashMap<>();
   private final List<Long> timesForPutting = new LinkedList<>();
   private int cacheEvictionsNum = 0;
 
@@ -25,36 +25,37 @@ public class LFUCache<T> implements Cache<T> {
   }
 
   @Override
-  public void put(T cacheObject) {
+  public synchronized void put(K cacheKey, V cacheValue) {
     LocalTime startTime = LocalTime.now();
     removeAfterTimeToLive();
 
     if (cache.size() == cacheSize) {
-      T lfuCachedValue = findLFU();
-      System.out.println("Cache block " + lfuCachedValue
+      K lfuCachedValue = findLFU();
+      System.out.println("Cache key " + lfuCachedValue
           + " removed.");
       cache.remove(lfuCachedValue);
       cacheEvictionsNum++;
     }
 
-    Pair newPair = new Pair();
-    cache.put(cacheObject, newPair);
-    System.out.println("Cache block " + cacheObject
+    ValueWrapper<V> valueWrapper = new ValueWrapper<>(cacheValue);
+    cache.put(cacheKey, valueWrapper);
+    System.out.println("Cache key " + cacheKey
         + " inserted.");
     LocalTime endTime = LocalTime.now();
     timesForPutting.add(ChronoUnit.MICROS.between(startTime, endTime));
   }
 
   @Override
-  public T get(T cacheObject) {
+  public synchronized V get(K cacheKey) {
     removeAfterTimeToLive();
 
-    if (cache.containsKey(cacheObject)) {
-      Pair pair = cache.get(cacheObject);
-      pair.incrementFrequency();
-      pair.updateTime();
-      System.out.println("Cache block " + cacheObject
+    if (cache.containsKey(cacheKey)) {
+      ValueWrapper<V> valueWrapper = cache.get(cacheKey);
+      valueWrapper.incrementFrequency();
+      valueWrapper.updateTime();
+      System.out.println("Cache key " + cacheKey
           + " used.");
+      return valueWrapper.getValue();
     }
     return null;
   }
@@ -65,30 +66,30 @@ public class LFUCache<T> implements Cache<T> {
         + "Number of cache evictions: " + getCacheEvictionsNum();
   }
 
-  private T findLFU() {
-    T lfuCachedObject = null;
+  private K findLFU() {
+    K lfuCachedKey = null;
     int minFrequency = Integer.MAX_VALUE;
 
-    for (Map.Entry<T, Pair> entry : cache.entrySet()) {
+    for (Map.Entry<K, ValueWrapper<V>> entry : cache.entrySet()) {
       if (entry.getValue().getFrequency() < minFrequency) {
         minFrequency = entry.getValue().getFrequency();
-        lfuCachedObject = entry.getKey();
+        lfuCachedKey = entry.getKey();
       }
     }
 
-    return lfuCachedObject;
+    return lfuCachedKey;
   }
 
   private void removeAfterTimeToLive() {
-    List<T> cachedObjectsToRemove = cache.entrySet().stream()
+    List<K> cachedKeysToRemove = cache.entrySet().stream()
         .filter(cacheEntry -> ChronoUnit.SECONDS.between(cacheEntry.getValue().getUpdateTime(), LocalTime.now()) > timeToLive)
         .map(Map.Entry::getKey)
         .collect(Collectors.toList());
 
-    for (T cachedObject : cachedObjectsToRemove) {
-      cache.remove(cachedObject);
+    for (K cachedKey : cachedKeysToRemove) {
+      cache.remove(cachedKey);
       cacheEvictionsNum++;
-      System.out.println("Cache block " + cachedObject
+      System.out.println("Cache key " + cachedKey
           + " removed.");
     }
   }

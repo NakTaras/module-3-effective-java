@@ -2,13 +2,19 @@ package com.mentoringprogram.module3.cache;
 
 import java.time.LocalTime;
 
-public class Pair {
+public class ValueWrapper<V> {
   private int frequency;
   private LocalTime updateTime;
+  private final V value;
 
-  public Pair() {
+  public ValueWrapper(V value) {
+    this.value = value;
     this.frequency = 1;
     this.updateTime = LocalTime.now();
+  }
+
+  public V getValue() {
+    return value;
   }
 
   public int getFrequency() {
